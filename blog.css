@@ -1,0 +1,310 @@
+.gridLayout{
+    grid-template-rows: 5vh minmax(100px, 20vh) minmax(100px, 75vh) 1vh;
+}
+.item-4{
+    max-height: 75vh;
+}
+
+/* 
+/* turn first post pink
+.post-1{
+    color: pink;
+}
+/* turn all unselected posts blue 
+.postsBox{
+    color: blue;
+}
+
+turn all unselected comments red 
+.comments{
+    color: red; 
+}
+
+turn all of the first comments green yellow 
+.comment-1{
+    color: greenyellow;
+}
+
+turn comment located at (post 1, comment 2) aqua
+.index-1-2{
+    color:aqua;
+} */ 
+
+
+
+*{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* desktop */
+@media screen and (min-width: 769px) { 
+    /*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+    #months{
+        background-color: rgba(0, 166, 208, 0.75);
+        border: none;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        width: 200pt;
+        text-align: left;
+    }
+
+    #months:hover{background-color:  rgba(125, 0, 208, 0.75);}
+
+    a{color: rgba(7, 251, 255, 0.75)}
+    a:hover{ color: rgba(125, 0, 208, 0.75);}
+
+    /*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+    .posts{
+        background-color: rgba(0, 0, 0, 0.221);
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .noPost{
+        background-color: white;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .title{
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        width: max-content;
+        padding: 10px;
+        margin: 5px;
+        max-width: 80vw;
+    }
+
+    .body{
+        margin-left: 25pt;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        padding: 10pt;
+        max-width: 85vw;
+        overflow: hidden;
+    }
+
+    .date{
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        width: max-content;
+        padding: 1px 10px;
+        margin: 5px;
+    }
+
+    .title:hover, .body:hover, .noPost:hover, .date:hover, .cmntTitle:hover, .cmntBody:hover, .noComment:hover, .cmnt-txt:hover{
+        background-color: whitesmoke;
+    }
+
+    /*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+    /* .comments{
+
+    } */
+
+
+    .cmntTitle{
+        background-color: rgba(245, 245, 245, 0.78);
+        color: black;
+        border-radius: 10px;
+        width: max-content;
+        padding: 10px;
+        margin: 5px;
+        margin-left: 50pt;
+    }
+
+    .cmntBody, .noComment{
+        background-color: rgba(245, 245, 245, 0.78);
+        color: black;
+        border-radius: 10px;
+        width: max-content;
+        padding: 10pt;
+        margin: 10px 75pt;
+    }
+
+
+    .cmnt-txt{
+        min-height: 25pt;
+        min-width: 350pt;
+        max-width: 500pt;
+        max-height: 100pt;
+        margin-bottom: -5px;
+        border-radius: 5px;
+        margin-left: 75pt;
+        background-color: white;
+    }
+
+    .cmnt-btn{
+        background-color: #4caf4fa2;
+        border: none;
+        color: white;
+        cursor: pointer;
+        width: 50pt;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .cmnt-btn:hover {background-color: #17cd20;}
+
+    .dltBtn{
+        color: yellow;
+        background-color: rgba(255, 0, 0, 0.619);
+        border-radius: 2px;
+        margin-left: 75pt;
+    }
+
+    .cLine{
+        width:auto;
+        margin-left: 50pt;
+    }
+
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* mobile */
+@media screen and (max-width: 768px) { 
+    /* … */
+    #months{
+    background-color: rgba(0, 166, 208, 0.75);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+    height: 40pt;
+    text-align: left;
+    }
+
+    #months:hover {background-color: rgba(125, 0, 208, 0.75);}
+
+    a{color: rgba(7, 251, 255, 0.75)}
+    a:hover{ color: rgba(125, 0, 208, 0.75);}
+
+
+    /*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+    .posts{
+        background-color: rgba(0, 0, 0, 0.221);
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .noPost{
+        background-color: white;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .title{
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        width: max-content;
+        padding: 10px;
+        margin: 5px;
+        max-width: 80vw;
+    }
+
+    .body{
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        padding: 10pt;
+        max-width: 85vw;
+        overflow: hidden;
+        margin: 5px;
+    }
+
+    .date{
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        width: max-content;
+        padding: 1px 10px;
+        margin: 5px;
+    }
+
+    .title:hover, .body:hover, .noPost:hover, .date:hover, .cmntTitle:hover, .cmntBody:hover, .noComment:hover, .cmnt-txt:hover{
+        background-color: whitesmoke;
+    }
+
+    /*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+    /* .comments{
+
+    } */
+
+
+    .cmntTitle{
+        background-color: rgba(245, 245, 245, 0.78);
+        color: black;
+        border-radius: 10px;
+        width: max-content;
+        padding: 10px;
+        max-width: 75vw;
+        overflow: hidden;
+    }
+
+    .cmntBody, .noComment{
+        background-color: rgba(245, 245, 245, 0.78);
+        color: black;
+        border-radius: 10px;
+        width: max-content;
+        padding: 10pt;
+        margin: 10px 0pt;
+        max-width: 75vw;
+        overflow: hidden;
+    }
+
+
+    .cmnt-txt{
+        min-width: 99%;
+        min-height: 40pt;
+        max-width: 99%;
+        max-height: 40pt;
+        margin-bottom: -5px;
+        border-radius: 5px;
+        background-color: white;
+        overflow: hidden;
+    }
+
+    .cmnt-btn{
+        background-color: #4caf4fa2;
+        border: none;
+        color: white;
+        cursor: pointer;
+        padding: 10px 20px;
+        width: 100%;
+        text-align: left;
+        border-radius: 5px;
+    }
+
+    .cmnt-btn:hover {background-color: #17cd20;}
+
+    .dltBtn{
+        color: yellow;
+        background-color: rgba(255, 0, 0, 0.619);
+        border-radius: 5px;
+        width: 75vw;
+        height: 15pt;
+    }
+
+    .cLine{
+        width:auto;
+    }
+
+
+}

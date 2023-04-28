@@ -1,0 +1,60 @@
+.window{
+width: 98vw;
+height: 93vh;
+
+position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%,-50%);
+
+max-width: 1072.5pt; /*1180*/
+max-height: 100%;    /*95%*/
+overflow:hidden;
+background-color: transparent;
+}
+
+#title, #body{
+border: 1px solid #ccc;
+border-radius: 3px;
+box-sizing: border-box;
+display: block;
+margin-bottom: 10px;
+padding: 10px;
+width: 100%;
+}
+
+textarea{
+    width: 1000pt;
+    height: 300pt;
+}
+
+#post, #clear, #cancel{
+background-color: #4CAF50;
+border: none;
+color: white;
+cursor: pointer;
+padding: 10px 20px;
+width: 100pt;
+}
+
+#post:hover, #clear:hover, #cancel:hover {
+background-color: #45a049;
+}
+
+.hl{
+    background-color: rgba(255, 0, 0, 0.688);
+}
+
+
+
+/* mobile */
+@media screen and (max-width: 768px) { 
+#post, #clear, #cancel{
+background-color: #4CAF50;
+border: none;
+color: white;
+cursor: pointer;
+padding: 10px 20px;
+width: 100%;
+}
+}

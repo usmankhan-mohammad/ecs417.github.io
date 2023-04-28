@@ -1,0 +1,26 @@
+.background {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    gap: 10px;
+    border-radius: 15px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 	1087.5pt;  /*1200*/
+    max-height: 95%;   /*90%*/
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.681);
+    background-image: url(images/wintemplate.png);
+    background-position: 80% 0%;
+    background-color: rgba(128, 128, 128, 0.672);
+}
+
+body{
+    background-image: url(images/bg.gif);
+    background-repeat:repeat;
+    color: whitesmoke;
+}
+
+
+  

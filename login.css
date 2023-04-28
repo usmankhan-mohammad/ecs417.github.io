@@ -1,0 +1,124 @@
+/* desktop */
+@media screen and (min-width: 769px) { 
+    .background{
+        max-width: 	600pt;  /*1200*/
+        max-height: 50%;   /*90%*/
+    }
+
+    .window{
+    width: 40vw;
+    height: 40vh;
+
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    max-width: 600pt; /*1180*/
+    max-height: 100%;    /*95%*/
+    overflow:hidden;
+    background-color: transparent;
+    }
+
+    #uid, #pwd{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    }
+
+    #xuid, #xpwd, #rpwd, #name, #email{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 2px;
+    padding: 2px;
+    width: 100%;
+    }
+
+    #btn{
+    background-color: #4caf4fa2;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 50pt;
+    text-align: left;
+    border-radius: 5px;
+    }
+
+    #btn2{
+    background-color: #4caf4fa2;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 155pt;
+    text-align: left;
+    border-radius: 5px;
+    }
+
+    #btn:hover, #btn2:hover {
+    background-color: #17cd20;
+    }
+}
+
+
+/*mobile*/
+@media screen and (max-width: 768px) { 
+    .window{
+    width: 90vw;
+    height: 90vh;
+
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    max-width: 600pt; /*1180*/
+    max-height: 100%;    /*95%*/
+    overflow:hidden;
+    background-color: transparent;
+    }
+
+    #uid, #pwd{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    }
+
+
+    #xuid, #xpwd, #rpwd, #name, #email{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 2px;
+    padding: 10px;
+    width: 100%;
+    }
+
+    #btn, #btn2{
+    background-color: #4caf4fa2;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;
+    border-radius: 5px;
+    }
+
+
+    #btn:hover, #btn2:hover {
+    background-color: #45a049;
+    }
+}
